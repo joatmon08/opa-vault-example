@@ -27,4 +27,9 @@ resource "helm_release" "vault" {
     name  = "ui.enabled"
     value = true
   }
+
+  set {
+    name  = "injector.externalVaultAddr"
+    value = var.vault_address
+  }
 }

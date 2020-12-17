@@ -27,3 +27,9 @@ variable "cidr" {
   description = "The CIDR block to use for this demo"
   default     = "10.0.0.0/16"
 }
+
+
+variable "vault_address" {
+  type        = string
+  description = "Address to the Vault Address"
+}
