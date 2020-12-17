@@ -32,4 +32,5 @@ variable "cidr" {
 variable "vault_address" {
   type        = string
   description = "Address to the Vault Address"
+  sensitive   = true
 }
